@@ -3,48 +3,66 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
+    android:gravity="center_horizontal"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_on_login"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="wrap_content"
+            android:text="onLogin"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
     <Button
         android:id="@+id/btn_get_result"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/button_width"
         android:layout_height="wrap_content"
-        android:text="getResult" />
+        android:text="getResult"
+        android:textAllCaps="false" />
 
     <Button
         android:id="@+id/btn_do_get"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/button_width"
         android:layout_height="wrap_content"
-        android:text="get" />
+        android:text="get"
+        android:textAllCaps="false" />
 
     <Button
         android:id="@+id/btn_do_post"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/button_width"
         android:layout_height="wrap_content"
-        android:layout_marginTop="3dp"
-        android:text="post" />
+        android:text="post"
+        android:textAllCaps="false" />
 
     <Button
         android:id="@+id/btn_do_post_string"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/button_width"
         android:layout_height="wrap_content"
-        android:layout_marginTop="3dp"
-        android:text="post string" />
+        android:text="post string"
+        android:textAllCaps="false" />
 
     <Button
         android:id="@+id/btn_post_gsjn_index"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/button_width"
         android:layout_height="wrap_content"
-        android:layout_marginTop="3dp"
-        android:text="gsjn index" />
+        android:text="gsjn index"
+        android:textAllCaps="false" />
 
     <TextView
         android:id="@+id/tv_response"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="3dp"
-        android:text="@string/app_name" />
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:paddingLeft="@dimen/view_divider_height"
+        android:paddingRight="@dimen/view_divider_height"
+        android:text="result" />
 
 </LinearLayout>

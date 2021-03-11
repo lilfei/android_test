@@ -15,11 +15,11 @@ public class Contant {
     /**
      * 登录
      */
-    public static String LoginloginUrl = BaseUrl + "/home/Login/login";
-    public static String LoginSendSmsaliUrl = BaseUrl + "/home/Login/send_smsali";
-    public static String LoginTownListUrl = BaseUrl + "/home/Login/town_list";
-    public static String LoginVillageListUrl = BaseUrl + "/home/Login/village_list";
-    public static String LoginMeUrl = BaseUrl + "/home/Login/me";
+    public static String LoginloginUrl = BaseUrl + "/home/LoginController/login";
+    public static String LoginSendSmsaliUrl = BaseUrl + "/home/LoginController/send_smsali";
+    public static String LoginTownListUrl = BaseUrl + "/home/LoginController/town_list";
+    public static String LoginVillageListUrl = BaseUrl + "/home/LoginController/village_list";
+    public static String LoginMeUrl = BaseUrl + "/home/LoginController/me";
 
     /**
      * 三农
