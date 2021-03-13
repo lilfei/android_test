@@ -11,6 +11,7 @@ import com.zzx.okhttptest.mvc.view.LoginActivity;
 import com.zzx.okhttptest.net.SSLSocketTest;
 import com.zzx.okhttptest.net.mSocketFactory;
 import com.zzx.okhttptest.net.ssl.SSLSocketTest1;
+import com.zzx.okhttptest.opengl.OpenGLActivity;
 import com.zzx.okhttptest.util.Logg;
 
 import org.json.JSONException;
@@ -80,6 +81,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         TvResponse = findViewById(R.id.tv_response);
 
         findViewById(R.id.btn_on_login).setOnClickListener(this);
+        findViewById(R.id.btn_on_opengl).setOnClickListener(this);
+
         findViewById(R.id.btn_get_result).setOnClickListener(this);
         findViewById(R.id.btn_do_get).setOnClickListener(this);
         findViewById(R.id.btn_do_post).setOnClickListener(this);
@@ -179,6 +182,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 onLoginActivity();
             }
             break;
+            case R.id.btn_on_opengl:{
+                onOpenGLES();
+            }
+            break;
             case R.id.btn_get_result: {
                 getSign();
             }
@@ -205,6 +212,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void onLoginActivity() {
         Intent intent = new Intent();
         intent.setClass(this, LoginActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
+    }
+
+    private void onOpenGLES(){
+        Intent intent = new Intent();
+        intent.setClass(this, OpenGLActivity.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
     }
