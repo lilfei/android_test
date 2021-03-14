@@ -33,6 +33,7 @@
         android:id="@+id/tv_login_activity"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:gravity="center"
         android:padding="@dimen/view_divider_height"
         android:text="login result" />
 
