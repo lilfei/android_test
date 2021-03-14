@@ -15,12 +15,8 @@ public class OpenGLActivity extends Activity {
 
         // Create a GLSurfaceView instance and set it
         // as the ContentView for this Activity.
-
-        Log.e("react", "onCreate: hahahah");
-
         gLView = new MyGLSurfaceView(this);
         setContentView(gLView);
-
     }
 
 

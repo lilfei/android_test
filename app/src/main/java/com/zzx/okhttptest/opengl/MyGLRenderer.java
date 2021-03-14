@@ -8,15 +8,13 @@ import javax.microedition.khronos.opengles.GL10;
 
 public class MyGLRenderer implements GLSurfaceView.Renderer {
 
-//    public void onSurfaceCreated(GL10 unused, EGLConfig config) {
-//        // Set the background frame color
-//        GLES20.glClearColor(1.0f, 0.5f, 0.0f, 0.5f);
-//    }
-
     private Triangle mTriangle;
-    private Square   mSquare;
+    private Square mSquare;
 
     public void onSurfaceCreated(GL10 unused, EGLConfig config) {
+        // Set the background frame color
+        GLES20.glClearColor(1.0f, 0.5f, 0.0f, 0.5f);
+
         // initialize a triangle
         mTriangle = new Triangle();
         // initialize a square
@@ -33,8 +31,7 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
         GLES20.glViewport(0, 0, width, height);
     }
 
-    public static int loadShader(int type, String shaderCode){
-
+    public static int loadShader(int type, String shaderCode) {
         // create a vertex shader type (GLES20.GL_VERTEX_SHADER)
         // or a fragment shader type (GLES20.GL_FRAGMENT_SHADER)
         int shader = GLES20.glCreateShader(type);

@@ -51,12 +51,12 @@
             android:id="@+id/btn_on_login"
             android:layout_width="@dimen/button_width"
             android:layout_height="wrap_content"
-            android:text="onLogin"
+            android:text="Login"
             android:textAllCaps="false" />
 
         <Button
             android:id="@+id/btn_on_opengl"
-            android:text="OpenGl ES 3.1"
+            android:text="OpenGL"
             android:layout_width="@dimen/button_width"
             android:layout_height="wrap_content"
             android:textAllCaps="false" />
